@@ -28,12 +28,17 @@ a:hover{text-decoration:none;}
 /*------ profile -----*/
 
 .profile , .projects , .contact{padding:99px 0px;}
-.profile .img-wrapper{width:270px; height:270px; background:transparent; border-radius:50%; position:relative; overflow:hidden; margin:auto; border:10px solid rgba(238, 238, 238, 0.48)}
-.profile img{position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; width:auto; max-width:100%; height:auto; max-height:100%;}
+.profile .img-wrapper{width:270px; height:270px; background:transparent; border-radius:50%; position:relative; overflow:hidden; margin:auto; border:10px solid rgba(212, 212, 212, 0.48)}
+.profile .img-wrapper img{position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; width:auto; max-width:100%; height:auto; max-height:100%;}
 .contact h2  , .contact p {color:#fff;}
 .contact hr{border-color:#fff;}
 .contact li{display:inline-block; list-style-type:none; margin:0 auto; position:relative}
-.contact li a .fa{font-size:20px; color:#fff; width:50px; height:50px; border:1px solid #fff; border-radius:50%; line-height:50px; margin:10px;}
+.contact li a .fa{font-size:20px; color:#fff; width:50px; height:50px; border:1px solid #fff; border-radius:50%; line-height:50px; margin:10px; transition:all 0.3s ease;}
+.contact li:hover a .fa{transform:translateY(-10px);}
+.contact li.facebook:hover a .fa{background-color:#4867aa;}
+.contact li.linked-in:hover a .fa{background-color:#0177b5;}
+.contact li.google-plus:hover a .fa{background:#dc4e40;}
+.contact li.github:hover a .fa{background:#000;}
 .contact li span.tooltip{background:#fff; border-radius:4px; display:inline-block; opacity:1; color:#707070; font-size:15px; padding:5px 10px; position:absolute;left:0; min-width:100px; text-align:center; right:0; margin:auto; visibility:hidden; opacity:0; bottom:-60px; transition:all 0.3s ease;}
 .contact li span.tooltip:before{content:""; border-bottom:10px solid #fff; border-left:10px solid transparent; border-right:10px solid transparent;
 position:absolute; top:-10px;	}
